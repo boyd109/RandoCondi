@@ -1,17 +1,12 @@
 import random
-x = random.randint(1, 5)
 
-if x == 1:
-    print "Ketchup and Mustard Only"
+def gen():
+    x = random.randint(1, len(options)) #Implies that the 0th index is 1
+    options = dict(1 ="Ketchup and Mustard Only", 2="Pickles, lots and lots of pickles", 
+        3="Peanut Butter and Jelly", 4="Pepperoni, Spinach, BBQ Sauce, and Mayonaise", 
+            5="lots of salt and maple syrup for your popcorn pancakes")
+    #Dict type to store all possible options
+    return options[x]
 
-if x == 2:
-    print "Pickles, lots and lots of pickles"
+gen() #Immediate closure
 
-if x == 3:
-    print "Peanut Butter and Jelly"
-
-if x == 4:
-    print "Pepperoni, Spinach, BBQ Sauce, and Mayonaise"
-
-if x == 5:
-    print "lots of salt and maple syrup for your popcorn pancakes"

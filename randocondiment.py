@@ -1,6 +1,5 @@
 import random
-random.seed()
-x = random.randint(1, 4)
+x = random.randint(1, 5)
 
 if x == 1:
     print "Ketchup and Mustard Only"
